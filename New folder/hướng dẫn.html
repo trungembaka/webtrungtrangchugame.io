@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn tựa game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+        }
+
+        header {
+            background-color: #585757;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .section p {
+            line-height: 1.6;
+        }
+        h2{
+            text-align: center;
+        }
+        p {
+            text-decoration: none;
+            font-size: 15px;
+            color: #333;
+            text-align: center;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cách chơi magic card</h1>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Bắt đầu</h2>
+            <p>Đây là game thẻ bài nên thẻ chính là thứ bạn cần quan tâm đầu tiên, bao gồm 2 loại thẻ chính là thẻ ma
+                pháp và thẻ quái vật <br>
+                Thẻ ma pháp chia làm 3 loại: Siêu tốc, Nhanh và Chậ<m class="br"></m>
+                Thẻ quái vật: Cần chú ý ở loại thẻ này là sức tấn công, máu, số lượng Ngọc mana tiêu tốn khi triệu hồi.
+                Ngoài ra thẻ quái còn chia thành 4 cấp bậc tăng dần là thẻ thường, hiếm, sử thi và anh hùng. Thẻ có cấp
+                bậc càng cao sẽ có nhiều hiệu ứng và sức mạnh tương ứng</p>
+        </div>
+        <div class="section">
+            <h2>Hướng dẫn chơi</h2>
+            <p>Giai đoạn đầu trận:<br>Khi trận đấu diễn ra, người chơi sẽ được 4 thẻ bài bạn có
+                thể chọn đổi lại các thẻ bài này. Người tấn công sẽ được lựa chọn ngẫu nhiên, phe tấn công sẽ có icon
+                lưỡi gươm.</p>
+            </p>
+            <p>Giai đoạn vòng đấu :<br>Khi vòng đấu bắt đầu bạn sẽ được rút 1 lá và nhận lượng ngọc Mana tương ứng với
+                số
+                vòng (tối đa 10). Ví dụ Vòng 9 bạn sẽ nhận được 9 Ngọc Mana, nhưng Vòng 11 bạn chỉ có thể nhận 10.
+
+                Phe tấn công sẽ là phe bắt đầu ở lượt 1 mỗi vòng. Các vòng đấu sẽ lập lại tương tự, cho đến khi trận đấu
+                kết thúc.
+            </p>
+            <p>Lưu ý:<br>
+
+                Mỗi lượt đấu bạn sẽ 1 điểm hành động, ví dụ bạn triệu hồi quái thì sẽ không thể triệu hồi thêm quái hay
+                sử dụng ma pháp (trừ ma pháp Siêu tốc) dù bạn còn đủ Ngọc Mana.
+                Lượng Ngọc Mana còn thừa lại sẽ được tích trữ để sử dụng ma pháp ở vòng sau và không cộng dồn. Ví dụ
+                vòng 1 bạn thừa 1 mana thì bạn sẽ nhận 1 tích trữ, ở vòng 2 bạn có thể sử dụng 1 tích trữ này xài ma
+                pháp. Nếu bạn không sử dụng 1 tích trữ này ở vòng 2 thì sang vòng 3 tích trữ vẫn sẽ mất.
+            </p>
+            <p>Về thẻ ma pháp: <br>
+
+                Siêu tốc: Có thể sử dụng bất kỳ lúc nào trong vòng đấu và không tiêu tốn điểm hành động. <br>
+                Nhanh: Có thể sử dụng bất kỳ lúc nào trong vòng đấu, có tiêu tốn điểm hành động nhưng có thể sử dụng
+                cùng lúc nhiều thẻ ma pháp nhanh. <br>
+                Chậm: Chỉ có thể sử dụng trong lượt của phe tấn công hay phe phòng ngự, tốn 1 điểm hành động.</p>
+            <p>Lượt phe tấn công <br>
+
+                Ở lượt này phe tấn công sẽ bắt đầu: Bạn sẽ lựa chọn 1 hành động sau đây Phát động tấn công (vòng 1 sẽ
+                không thực hiện được thao tác này do chưa có quái), triệu hồi quái, sử dụng ma pháp hoặc kết thúc lượt
+                khi không có quái hay ma pháp phù hợp với lượng Ngọc Mana bạn có. <br>
+
+                Nếu bạn chọn phát động tấn công cả hai sẽ vào lượt chiến đấu. Bạn thực hiện thao tác này bằng cách kéo
+                quái lên giữa sàn đấu.</p>
+            <p>Lượt chiến đấu <br>
+
+                Được phát động bởi bên phe tấn công, phe phòng ngự bị động và bắt buộc tham gia. <br>
+
+                Phe tấn công sẽ kéo quái mình vào giữa sàn đấu. <br>
+                Phe phòng ngự kéo quái mình để chặn đứng quái của đối phương, bạn có thể lựa chọn mục tiêu để chặn tùy
+                theo chiến thuật của bạn. Bạn cũng có thể lựa chọn bỏ chặn. <br>
+                Khi phòng ngự chọn kết thúc lượt, thì trận chiến sẽ diễn ra. Quái bên phe sẽ tấn công thẳng nhà chính
+                nếu không bị chặn. <br>
+                Quái của bạn sẽ tử vong khi máu của quái bằng hoặc nhỏ hơn sức tấn công của quân bài đối thủ.</p>
+            <p>
+                Lượt phe phòng thủ <br>
+
+                Lượt 2 thuộc về phe phòng ngự, ở lượt này bạn có thể triệu hồi quái, sử dụng ma pháp hoặc kết thúc lượt
+                khi không có quái hay ma pháp phù hợp với lượng Ngọc Mana bạn có. <br>
+                Sau khi kết thúc lượt phe phòng thủ sẽ trở về lượt phe tấn công.
+            </p>
+            <p>Kết thúc vòng đấu <br>
+
+                Vòng đấu sẽ chấm dứt khi cả hai người chơi lần lượt chọn kết thúc lượt mà không triệu hồi quái, sử dụng ma pháp hay phát động tấn công. Nếu bạn không phát động tấn công thì lượt tấn công của bạn sẽ mất ở vòng sau. <br>
+                
+                Hai người chơi sẽ đổi phe nhau khi kết thúc vòng đấu</p>
+                <p>Giai đoạn kết thúc trận <br>
+                    Trận đấu sẽ kết thúc khi nhà chính của 1 trong 2 người chơi còn 0 máu</p>
+                    <p>
+                        Cách chiến thắng trận đấu <br>
+Mỗi trận bạn sẽ có 20 máu Nhà chính và đôi thủ cũng vậy. Bạn phải sẽ dùng những quân bài của mình tấn công vào kẻ địch khi máu nhà chính của chúng còn 0 hoặc thấp hơn bạn sẽ thắng.
+                    </p>
+        </div>
+        <div class="section">
+            <h2>Mẹo và thủ thuật</h2>
+            <p>- Luôn lưu trò chơi thường xuyên để tránh mất tiến trình của bạn.</p>
+            <p>- Thu thập tất cả các vật phẩm có thể, chúng có thể hữu ích trong các nhiệm vụ sau này.</p>
+            <p>- Hãy chơi cùng bạn bè của bạn để trải nghiệm vui vẻ hơn.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

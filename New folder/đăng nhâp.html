@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập Magic card</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('z5236466864176_dff8a7fb9e08f979b8c6126263ccad79.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    margin-top: 0;
+}
+
+.login-form form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #555;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Magic card</h1>
+    </header>
+    <main>
+        <section class="login-form">
+            <h2>Đăng nhập tài khoản</h2>
+            <form action="submit.php" method="post">
+                <label for="username">Tên đăng nhập hoặc Email:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Đăng nhập</button>
+            </form>
+            <p>Chưa có tài khoản? <a href="đăng ký.html">Đăng ký ngay</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; trunganh</p>
+    </footer>
+</body>
+</html>
